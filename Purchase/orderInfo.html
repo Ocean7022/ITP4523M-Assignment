@@ -1,0 +1,121 @@
+<html>
+
+<head>
+    <title>Yummy Restaurant Purchase System</title>
+    <link rel="stylesheet" href="css/div-style.css">
+    <link rel="stylesheet" href="css/font-style.css">
+    <link rel="stylesheet" href="css/list-style.css">
+    <link rel="stylesheet" href="../css/msgBox.css">
+</head>
+
+<body style="background-color: darkgrey;">
+    <div id="body">
+        <div id="main">
+            <br>
+            <h1>Yummy Restaurant Group Limited</h1>
+            <br>
+            <ul class="list">
+                <li><a href="make.html">Make Order</a>
+                <li><a href="view.html" id="location">View Order</a>
+                <li><a href="update.html">Update Manager Info</a>
+            </ul>
+
+            <div id="name">
+                Staffname
+            </div>
+            <input type="button" value="Logout" id="logout" onclick="logout()">
+
+            <br>
+            <table id="orderInfo">
+                <tr id="listColor">
+                    <td style="width: 100px;"></td>
+                    <td style="width: 370px;">Order ID</td>
+                    <td id="orderID">
+                    </td>
+                    <td style="width: 100px;"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Purchase Manager ID</td>
+                    <td id="managerID">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr id="listColor">
+                    <td></td>
+                    <td>Manager Name</td>
+                    <td id="managerName">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Order Date Time</td>
+                    <td id="orderTime">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr id="listColor">
+                    <td></td>
+                    <td>Delivery Date</td>
+                    <td id="deDate">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Delivery Address</td>
+                    <td id="deAddress">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr id="listColor">
+                    <td></td>
+                    <td>Total Order Amount</td>
+                    <td id="amount">
+                    </td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Discount Rate</td>
+                    <td id="discount">
+                    </td>
+                    <td></td>
+                </tr>
+            </table>
+            <br>
+            <table id="orderItemInfo">
+                <tr id="listColor"><th style="width: 70px;" id="loading"></th>
+                    <th id="itemID">&and; Item ID</th>
+                    <th id="itemName">Item Name</th>
+                    <th id="companyName">Suplier Name</th>
+                    <th id="orderQty">Order Quantity</th>
+                    <th id="itemPrice">Item Price</th>
+                    <th id="totalPrice">Total Price</th>
+                </tr>
+                <tbody id="info">
+
+                </tbody>
+            </table>
+            <br>
+            <div style="text-align: center;">
+                <input type="submit" value="Delete Order" id="chick" onclick="confirm()">
+            </div>
+            <br><br><br><br>
+        </div>
+    </div>
+
+    <div id="msgBoxBackground">
+        <div id="msgBox">
+            <h2 id="msg2">Message</h2>
+        </div>
+    </div>
+
+    <script src="../js/msgBox.js" type="text/javascript"></script>
+    <script src="../js/jQuery.js" type="text/javascript"></script>
+    <script src="../js/accountFunction.js" type="text/javascript"></script>
+    <script src="../js//purOrderInfo.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Yummy Restaurant Purchase System</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/msgBox.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="login">
+            <br>
+            <h1>Yummy Restaurant Group Limited</h1>
+            <form>
+                <table id="loginBox">
+                    <tr>
+                        <td style="width: 40px;"></td>
+                        <td>
+                            <input id="id" type="text" placeholder="ID">
+                        </td>
+                        <td style="width: 40px;"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input id="pwd" type="password" placeholder="Password">
+                        </td>
+                        <td id="showAndHide"><img src="images/hidePwd.png" style="width: 45px;"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <input type="submit" onclick="login()" value="Login">
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+                <p id="forgot" onclick="showMessage('Please contact IT department')">Forgot password</p>
+            </form>
+            <p id="msg"></p>
+        </div>
+    </div>
+
+    <div id="msgBoxBackground">
+        <div id="msgBox">
+            <h2 id="msg2">Message</h2>
+        </div>
+    </div>
+
+    <script src="js/msgBox.js" type="text/javascript"></script>
+    <script src="js/jQuery.js" type="text/javascript"></script>
+    <script src="js/accountFunction.js" type="text/javascript"></script>
+    <script>
+        showAndHide('pwd', 'showAndHide');
+        function showAndHide(textBoxID, imgID) {
+            var textBox = document.getElementById(textBoxID);
+            var img = document.getElementById(imgID);
+            img.addEventListener("click", function () {
+                if (textBox.getAttribute("type") == "password") {
+                    textBox.setAttribute("type", "text");
+                    document.getElementById('showAndHide').innerHTML = '<img src="images/showPwd.png" style="width: 45px;">';
+                }
+                else {
+                    textBox.setAttribute("type", "password");
+                    document.getElementById('showAndHide').innerHTML = '<img src="images/hidePwd.png" style="width: 45px;">';
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>

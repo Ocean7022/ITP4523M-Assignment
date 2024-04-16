@@ -1,0 +1,65 @@
+#msgBox, #msgBoxBackground {
+    background-color: #cccccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+}
+
+#msgBoxBackground {
+    position: fixed;
+    background-color: #00000070;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#msgBox {
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: auto;
+}
+
+#msgBox input {
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#msg2 {
+    color: #000;
+    font-size: 40px;
+}
+
+@keyframes msgBoxAnimation01 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.msgBoxAnimation01 {
+    animation: msgBoxAnimation01 0.5s forwards;
+}
+
+@keyframes msgBoxAnimation02 {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.msgBoxAnimation02 {
+    animation: msgBoxAnimation02 0.5s forwards;
+}

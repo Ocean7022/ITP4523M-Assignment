@@ -1,0 +1,124 @@
+ul { 
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    text-align: center;
+}
+ul.list {
+    border: 0px;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 21px;
+    border-bottom: #969696 4px solid;
+}
+ul.list li {
+    border-right: #969696 1px solid;
+    border-left: #969696 1px solid;
+    width: 425px;
+}
+ul.list>li {
+    float: left;
+}
+ul.list a {
+    color: #FFFFFF;
+    text-decoration: none;
+    background-color: #16c5fa;
+    display: block;
+    line-height: 40px;
+}
+ul.list a:hover {
+    background-color: #FF6600;
+}
+
+#location {
+    border-bottom: #FFFFFF 1px solid;
+}
+
+#itemsList, #itemsList2, #orderList, #orderInfo, #orderItemInfo, #managerInfo {    
+    width: 98%; 
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial;
+    font-size: 25px;
+    line-height: 50px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#itemsList tr:hover, #itemsList2 tr:hover, #orderList  tr:hover,#orderInfo tr:hover, #orderItemInfo tr:hover {
+    background-color: #7bd7fc;
+}
+
+#itemsList {  
+    width: 98%; 
+}
+
+#orderInfo, #managerInfo {
+    width: 98%;
+    line-height: 35px;
+    text-align: left;    
+}
+
+#managerInfo {
+    line-height: 45px;
+}
+
+#orderItemInfo {
+    width: 98%;
+}
+
+#listColor {
+    background-color: #808080;
+}
+
+#price {
+    margin: 0 auto;
+    width: 320px;
+    line-height: 35px;
+}
+
+#price td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+#chick, #groupBySupplier {
+    border: 0px;
+    display: inline-block;
+    font-family: Arial;
+    font-size: 21px;
+    text-align: center;
+    width: 200px;
+    height: 45px;
+}
+#chick:hover, #groupBySupplier:hover {
+    background-color: #7bd7fc;
+}
+#chick:active, #groupBySupplier:active {
+    background-color: #0080ff;
+}
+
+#details {
+    display: inline-block;
+    width: 35px;
+}
+#details:hover {
+    background-color: #0080cc;
+}
+
+#items {
+    border: 2px solid #272727;
+}
+
+#tbTotalPrice, #tbTotalItems, #tbDiscountRate, #tbTotalPriceNew {
+    border: 0px;
+    width: 100px;
+    text-align: center;
+}
+
+#quantityBox {
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background-color: #ffffff00;
+    text-align: center;
+}

@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <title>Yummy Restaurant Purchase System</title>
+    <link rel="stylesheet" href="css/div-style.css">
+    <link rel="stylesheet" href="css/font-style.css">
+    <link rel="stylesheet" href="css/list-style.css">
+    <link rel="stylesheet" href="../css/msgBox.css">
+</head>
+
+<body style="background-color: #90B8CA;">
+    <div id="body">
+        <div id="main">
+            <br>
+            <h1>Yummy Restaurant Group Limited</h1>
+            <br>
+
+            <table style="width: 1170px; margin: 0 auto;">
+                <tr>
+                    <td style="width: 200px;" valign="top">
+                        <div id="name">
+                            Staffname
+                        </div>
+                        <input type="button" value="Logout" id="logout" onclick="logout()">
+                        <br><br>
+
+                        <ul class="list">
+                            <li><a href="insert.html" style="border-top: #FFFFFF 2px solid;">- Insert Item Info
+                                    -</a>
+                            <li><a href="edit.html" id="location">&gt Edit Item Info &lt</a>
+                            <li><a href="report.html" style="border-bottom: #FFFFFF 2px solid;">- Generate Report
+                                    -</a>
+                        </ul>
+                    </td>
+                    <td>
+                        <form method="post" id="itemInfoForm">
+                            <legend>Item Information</legend>
+                            <table id="itemInfo">
+                                <tr id="listColor">
+                                    <td style="width: 100px;"></td>
+                                    <td style="width: 370px;">Suppler ID</td>
+                                    <td id="supID"></td>
+                                    <td style="width: 100px;"></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Item ID</td>
+                                    <td id="itemID"></td>
+                                    <td></td>
+                                </tr>
+                                <tr id="listColor">
+                                    <td></td>
+                                    <td>Item Name</td>
+                                    <td><input type="text" id="itemName" name="itemName" required></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Item Description</td>
+                                    <td><input type="text" id="description" name="description" required></td>
+                                    <td></td>
+                                </tr>
+                                <tr id="listColor">
+                                    <td></td>
+                                    <td>Stock Item Quantity</td>
+                                    <td><input type="number" id="quantity" name="quantity" min="0" max="9999999" required></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td>Price</td>
+                                    <td><input type="number" id="price" name="price" min="1" max="999999"></td>
+                                    <td></td>
+                                </tr>
+                                <tr id="listColor">
+                                    <td></td>
+                                    <td>Item Image</td>
+                                    <td><input type="file" id="image" name="image"></td>
+                                    <td></td>
+                                </tr>
+                            </table>
+
+                            <br>
+                            <div style="text-align: center;">
+                                <img id="items" style="width: 300px;"><br><br>
+                                <input type="submit" value="Edit Item Info" id="chick">
+                                <input type="hidden" id="itemIDHidden" name="itemID">
+                                <input type="hidden" id="itemImageHidden" name="itemImage">
+                            </div>
+                            <br>
+                        </form>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <div id="msgBoxBackground">
+        <div id="msgBox">
+            <h2 id="msg2">Message</h2>
+        </div>
+    </div>
+
+    <script src="../js/msgBox.js" type="text/javascript"></script>
+    <script src="../js/jQuery.js" type="text/javascript"></script>
+    <script src="../js/accountFunction.js" type="text/javascript"></script>
+    <script src="../js/supItemInfo.js" type="text/javascript"></script>
+</body>
+
+</html>

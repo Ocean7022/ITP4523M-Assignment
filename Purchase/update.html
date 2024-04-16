@@ -1,0 +1,107 @@
+<html>
+
+<head>
+    <title>Yummy Restaurant Purchase System</title>
+    <link rel="stylesheet" href="css/div-style.css">
+    <link rel="stylesheet" href="css/font-style.css">
+    <link rel="stylesheet" href="css/list-style.css">
+    <link rel="stylesheet" href="../css/msgBox.css">
+</head>
+
+<body style="background-color: darkgrey;">
+    <div id="body">
+        <div id="main">
+            <br>
+            <h1>Yummy Restaurant Group Limited</h1>
+            <br>
+            <ul class="list">
+                <li><a href="make.html">Make Order</a>
+                <li><a href="view.html">View Order</a>
+                <li><a href="update.html" id="location">Update Manager Info</a>
+            </ul>
+
+            <div id="name">
+                Staffname
+            </div>
+            <input type="button" value="Logout" id="logout" onclick="logout()">
+
+            <br>
+            <form method="post" id="userInfoForm">
+                <legend>Manager Information</legend>
+
+                <table id="managerInfo">
+                    <tr id="listColor">
+                        <td style="width: 20%;"></td>
+                        <td style="width: 30%;">Manager Name</td>
+                        <td id="userName"></td>
+                        <td style="width: 20%;"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Manager ID</td>
+                        <td id="id"></td>
+                        <td></td>
+                    </tr>
+                    <tr id="listColor">
+                        <td></td>
+                        <td>Old Password</td>
+                        <td><input type="password" id="oldPwd" name="oldPwd" style="width: 100%;"></td>
+                        <td id="showAndHide1"><img src="../images/hidePwd.png" style="width: 45px;"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>New Password</td>
+                        <td><input type="password" id="newPwd1" name="newPwd" style="width: 100%;"></td>
+                        <td id="showAndHide2"><img src="../images/hidePwd.png" style="width: 45px;"></td>
+                    </tr>
+                    <tr id="listColor">
+                        <td></td>
+                        <td>New Password Again</td>
+                        <td><input type="password" id="newPwd2" style="width: 100%;"></tmp></td>
+                        <td id="showAndHide3"><img src="../images/hidePwd.png" style="width: 45px;"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Contact Number</td>
+                        <td><input type="text" id="contact" name="contact" pattern="\d{8}" title="8 digit phone number" required style="width: 100%;"></td>
+                        <td></td>
+                    </tr>
+                    <tr id="listColor">
+                        <td></td>
+                        <td>Warehouse Address</td>
+                        <td><input type="text" id="address" name="address" required style="width: 100%;"></td>
+                        <td></td>
+                    </tr>
+                </table>
+
+                <br>
+                <div style="text-align: center;">
+                    <input type="submit" value="Update" id="chick">
+                </div>
+                <br>
+                <input type="hidden" id="type" name="type">
+            </form>
+        </div>
+    </div>
+
+    <div id="msgBoxBackground">
+        <div id="msgBox">
+            <h2 id="msg2">Message</h2>
+
+        </div>
+    </div>
+
+    <script src="../js/msgBox.js" type="text/javascript"></script>
+    <script src="../js/jQuery.js" type="text/javascript"></script>
+    <script src="../js/accountFunction.js" type="text/javascript"></script>
+    <script src="../js/purUpdateInfo.js" type="text/javascript"></script>
+    <script src="../js/showAndHidePws.js" type="text/javascript"></script>
+    <script>
+        //use on show and hide password
+        showAndHide('oldPwd', 'showAndHide1');
+        showAndHide('newPwd1', 'showAndHide2');
+        showAndHide('newPwd2', 'showAndHide3');
+    </script>
+</body>
+
+</html>

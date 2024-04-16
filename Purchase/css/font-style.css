@@ -1,0 +1,82 @@
+h1 {
+    font-size: 45px;
+    color: #e0e0e0;
+    text-shadow: 3px 4px 5px #000;
+    text-align: center;
+}
+
+#p,
+p,
+input,
+#serMsg,
+#price {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+#p,
+p {
+    line-height: 10px;
+}
+
+#serMsg {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+legend {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: #333;
+    text-align: center;
+}
+
+fieldset {
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+}
+
+#itemsTitle {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Arial;
+}
+
+#itemsTitle:hover {
+    color: #e0e0e0;
+}
+
+#logout {
+    color: #000000;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    display: block;
+    line-height: 40px;
+    width: 100px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    border: 0px;
+}
+
+#logout:hover {
+    background-color: #AAAAAA;
+}
+
+#logout:active {
+    background-color: #6d6d6d;
+}
+
+input {
+    background-color: #C8C8C8;
+}
+
+center {
+    text-align: center;
+}
+
+style001 {
+    color: #2904ff;
+    font-weight: bold;
+}
